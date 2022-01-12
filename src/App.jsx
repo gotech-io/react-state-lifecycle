@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ToggleButton from './ToggleButton';
 import IntervalCounter from './IntervalCounter';
+import FetchDataComponent from './FetchDataComponent';
 
 import './App.css';
 
@@ -15,6 +16,7 @@ const App = () => {
         onChange={(newState) => setShouldRun(newState)}
       />
       <IntervalCounter shouldRun={shouldRun} />
+      <FetchDataComponent />
     </div>
   );
 };
